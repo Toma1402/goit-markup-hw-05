@@ -539,21 +539,25 @@ img {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 5000ms var(--cubic);
 }
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
-  visibility: hidden;
 }
-
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.9);
+}
 .modal {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
   min-width: 528px;
   min-height: 581px;
   background-color: var(--white);
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transition: transform 5000ms var(--cubic);
 }
 .close-modal {
   position: absolute;
