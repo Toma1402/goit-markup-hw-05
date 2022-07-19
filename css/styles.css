@@ -19,6 +19,8 @@
 
   --main-font: 'Roboto', sans-serif;
   --secondaty-font: 'Raleway', sans-serif;
+
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   font-family: var(--main-font);
@@ -87,14 +89,14 @@ img {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic);
 }
 
 .active:hover,
 .active:focus,
 .header-link-curr {
   color: var(--accent-cl);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic);
 }
 .header-link-curr::after {
   position: absolute;
@@ -178,12 +180,12 @@ img {
   color: var(--white);
   background-color: var(--accent-cl);
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic);
 }
 .main-btn:hover,
 .main-btn:focus {
   background-color: var(--main-btn-hover);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic);
 }
 
 /* specifisity section */
@@ -321,7 +323,7 @@ img {
 
 .social-icon {
   fill: var(--client-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms var(--cubic);
 }
 .social {
   display: flex;
@@ -331,17 +333,17 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic);
 }
 .social:hover,
 .social:focus {
   background-color: var(--accent-cl);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic);
 }
 .social:hover .social-icon,
 .social:focus .social-icon {
   fill: var(--white);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms var(--cubic);
 }
 /*Clients section*/
 .clients-list {
@@ -358,14 +360,13 @@ img {
   border: 1px solid var(--client-color);
   border-radius: 4px;
   color: var(--client-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic), border 250ms var(--cubic);
 }
 .client-link:hover,
 .client-link:focus {
   border-color: var(--accent-cl);
   color: var(--accent-cl);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic), border-color 250ms var(--cubic);
 }
 .client-icon {
   display: block;
@@ -428,7 +429,7 @@ img {
 }
 .join-bg {
   background-color: var(--social-f-col);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic);
 }
 .join-col {
   fill: var(--white);
@@ -508,8 +509,8 @@ img {
   letter-spacing: 0.03em;
   background-color: var(--secondary-backgr-cl);
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic),
+    box-shadow 250ms var(--cubic);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -517,19 +518,18 @@ img {
   background-color: var(--accent-cl);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic),
+    box-shadow 250ms var(--cubic);
 }
 .card-link {
   display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms var(--cubic);
 }
 .card-link:hover,
 .card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms var(--cubic);
 }
 /*MODAL WINDOW*/
 .backdrop {
@@ -588,7 +588,7 @@ img {
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms var(--cubic);
 }
 .img-text {
   font-family: var(--main-font);
