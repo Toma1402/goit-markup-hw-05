@@ -101,7 +101,7 @@ img {
 .header-link-curr::after {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -1px;
   content: '';
   display: block;
   width: 100%;
@@ -540,7 +540,7 @@ img {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition: opacity 5000ms var(--cubic);
+  transition: visibility 250ms var(--cubic), opacity 250ms var(--cubic);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -558,7 +558,7 @@ img {
   min-width: 528px;
   min-height: 581px;
   background-color: var(--white);
-  transition: transform 5000ms var(--cubic);
+  transition: visibility 250ms var(--cubic), transform 250ms var(--cubic);
 }
 .close-modal {
   position: absolute;
