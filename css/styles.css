@@ -558,7 +558,7 @@ img {
   min-width: 528px;
   min-height: 581px;
   background-color: var(--white);
-  transition: visibility 250ms var(--cubic), transform 250ms var(--cubic);
+  transition: transform 250ms var(--cubic);
 }
 .close-modal {
   position: absolute;
