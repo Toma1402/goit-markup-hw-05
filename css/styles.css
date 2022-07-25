@@ -96,7 +96,6 @@ img {
 .active:focus,
 .header-link-curr {
   color: var(--accent-cl);
-  transition: color 250ms var(--cubic);
 }
 .header-link-curr::after {
   position: absolute;
@@ -185,7 +184,6 @@ img {
 .main-btn:hover,
 .main-btn:focus {
   background-color: var(--main-btn-hover);
-  transition: background-color 250ms var(--cubic);
 }
 
 /* specifisity section */
@@ -338,12 +336,10 @@ img {
 .social:hover,
 .social:focus {
   background-color: var(--accent-cl);
-  transition: background-color 250ms var(--cubic);
 }
 .social:hover .social-icon,
 .social:focus .social-icon {
   fill: var(--white);
-  transition: fill 250ms var(--cubic);
 }
 /*Clients section*/
 .clients-list {
@@ -366,7 +362,6 @@ img {
 .client-link:focus {
   border-color: var(--accent-cl);
   color: var(--accent-cl);
-  transition: color 250ms var(--cubic), border-color 250ms var(--cubic);
 }
 .client-icon {
   display: block;
@@ -518,8 +513,6 @@ img {
   background-color: var(--accent-cl);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  transition: color 250ms var(--cubic), background-color 250ms var(--cubic),
-    box-shadow 250ms var(--cubic);
 }
 .card-link {
   display: block;
@@ -529,7 +522,6 @@ img {
 .card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition: box-shadow 250ms var(--cubic);
 }
 /*MODAL WINDOW*/
 .backdrop {
